@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="source" class="com.gujun.beans.Source">
+        <property name="fruit" value="apple"/>
+    </bean>
+
+    <bean id="juiceMaker" class="com.gujun.beans.JuiceMaker">
+        <property name="shop" value="多一点"/>
+        <property name="source" ref="source"/>
+    </bean>
+
+</beans>
