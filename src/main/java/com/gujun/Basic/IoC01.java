@@ -1,4 +1,4 @@
-package com.gujun.test;
+package com.gujun.Basic;
 
 import com.gujun.beans.BeanXml01;
 import org.junit.jupiter.api.Test;
@@ -12,7 +12,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @Date 2019/7/28 21:30
  * @Version 1.0
  **/
-public class Test03 {
+public class IoC01 {
 
     //依赖注入：
     //构造器注入（index属性指定第几个参数，从0开始）、setter注入是主要方式；

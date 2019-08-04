@@ -1,4 +1,4 @@
-package com.gujun.test;
+package com.gujun.Basic;
 
 import com.gujun.beans.JuiceMaker;
 import org.junit.jupiter.api.Test;
@@ -12,7 +12,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @Date 2019/7/28 15:50
  * @Version 1.0
  **/
-public class Test01 {
+public class Basic01 {
 
     //Spring IoC容器，控制反转，依赖注入  入门实例
     @Test

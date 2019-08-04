@@ -1,4 +1,4 @@
-package com.gujun.test;
+package com.gujun.Basic;
 
 /**
  * @ClassName gu
@@ -7,7 +7,7 @@ package com.gujun.test;
  * @Date 2019/7/31 21:45
  * @Version 1.0
  **/
-public class Test05 {
+public class IoC03 {
 
     //自动装配：
     //@Autowired，Spring会根据类型去寻找，并将其注入；

@@ -1,8 +1,8 @@
-package com.gujun.test;
+package com.gujun.conditional;
 
-import com.gujun.beans.Game;
-import com.gujun.config.SpringConfig;
+import com.gujun.beans.Man;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -10,17 +10,21 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @ClassName gu
  * @Description TODO
  * @Author GuJun
- * @Date 2019/7/29 21:04
+ * @Date 2019/8/4 10:27
  * @Version 1.0
  **/
-public class Test04 {
+public class Test01 {
 
-    //注解装配Bean
     @Test
     public void test01(){
         ApplicationContext context=new AnnotationConfigApplicationContext(SpringConfig.class);
-        Game game= (Game) context.getBean("game");
-        game.show();
+        try {
+            Man man= context.getBean(Man.class);
+            man.show();
+        } catch (BeansException e) {
+            System.out.println(e.getMessage());
+        }
+
     }
 
 }

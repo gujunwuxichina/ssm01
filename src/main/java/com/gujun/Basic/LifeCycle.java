@@ -1,11 +1,9 @@
-package com.gujun.test;
+package com.gujun.Basic;
 
 import com.gujun.beans.Person;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import java.lang.annotation.Target;
 
 /**
  * @ClassName gu
@@ -14,7 +12,7 @@ import java.lang.annotation.Target;
  * @Date 2019/7/28 16:06
  * @Version 1.0
  **/
-public class Test02 {
+public class LifeCycle {
 
     //Spring IoC容器的初始化和依赖注入：
     //Bean的定义和初始化在Spring IoC容器是两大步骤，先是定义，然后是初始化和依赖注入;
